@@ -1,0 +1,5 @@
+--- 
+:"Admin::Conteudo": 
+  :imagem: 
+  - :medium
+  - :thumb
