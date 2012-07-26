@@ -1,5 +1,4 @@
-o: ActiveSupport::Cache::Entry	:@expires_in0:@value"/∫{"digest"%48af1ffe6ed34f03e0f267fbc0574d1b"_version"%7270767b2a9e9fff880aa5de378ca791"
-mtime"2012-07-20T15:11:18-03:00"source"∏/*!
+o: ActiveSupport::Cache::Entry	:@expires_in0:@compressedF:@value"/∫{"required_paths["/$root/app/assets/stylesheets/bootstrap.css"source"∏/*!
  * Bootstrap v2.0.4
  *
  * Copyright 2012 Twitter, Inc
@@ -4636,6 +4635,7 @@ div.subnav .nav > .open > .dropdown-toggle:hover .caret {
 .invisible {
   visibility: hidden;
 }
-"pathname"/$root/app/assets/stylesheets/bootstrap.css"content_type"text/css"lengthi∏"dependency_digest"%735c3efb062a65f080a1e16b94199969"
-class"ProcessedAsset"dependency_paths[{"digest"%0130bd9146b8cca4c9438b516414af38"
-mtime"2012-07-20T15:11:18-03:00"	path"/$root/app/assets/stylesheets/bootstrap.css"required_paths["/$root/app/assets/stylesheets/bootstrap.css"logical_path"bootstrap.css:@compressedF:@created_atf1343278516.8546281 ≤:
+"
+class"ProcessedAsset"digest"%817912275f7fd7e5891b0603adcd5d44"dependency_paths[{"	path"/$root/app/assets/stylesheets/bootstrap.css"digest"%a982eb088150b135ae8be627abb779b7"
+mtime"2012-07-20T15:11:18-03:00"dependency_digest"%0ed2fe7b7f4fdb71941d73d9c3288a82"content_type"text/css"pathname"/$root/app/assets/stylesheets/bootstrap.css"lengthi∏"_version"%9f3b95dd7ea3030dc35985c0a8020862"
+mtime"2012-07-20T15:11:18-03:00"logical_path"bootstrap.css:@created_atf1343310837.664134 Å,

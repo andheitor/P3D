@@ -3,7 +3,7 @@
 	<div id="centro">
 	<% @conteudo_empresa.each do |t| %>
 		<h1><%= t.titulo %></h1>
-		<%= t.texto_longo %>
+		<%=raw t.texto_longo %>
 	<% end %>
 	
 	
