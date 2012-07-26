@@ -55,6 +55,7 @@ module P3D
     # Enable the asset pipeline
     config.assets.enabled = true
     config.assets.initialize_on_precompile = false
+    config.assets.compile = true
     
     config.assets.precompile += ['bootstrap.css']
     config.assets.precompile += ['bootstrap.js']
