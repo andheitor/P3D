@@ -1,5 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@expires_in0:@value"ÐK{"lengthi˜I"digest"%463f3fc0fc951e4f9d07a1d06d1d056b"
-mtime"2012-07-18T00:46:50-03:00"pathname"3$root/vendor/assets/javascripts/jquery.pjax.js"source"˜I// jquery.pjax.js
+o: ActiveSupport::Cache::Entry	:@expires_in0:@value"ÐK{"dependency_paths[{"	path"3$root/vendor/assets/javascripts/jquery.pjax.js"
+mtime"2012-07-18T00:46:50-03:00"digest"%463f3fc0fc951e4f9d07a1d06d1d056b"
+class"ProcessedAsset"required_paths["3$root/vendor/assets/javascripts/jquery.pjax.js"lengthi˜I"dependency_digest"%7d474375fd3bf538d5ae96029e2cf2c5"content_type"application/javascript"pathname"3$root/vendor/assets/javascripts/jquery.pjax.js"
+mtime"2012-07-18T00:46:50-03:00"logical_path"jquery.pjax.js"_version"%7270767b2a9e9fff880aa5de378ca791"source"˜I// jquery.pjax.js
 // copyright chris wanstrath
 // https://github.com/defunkt/jquery-pjax
 
@@ -676,6 +678,4 @@ if ( !$.support.pjax ) {
 }
 
 })(jQuery);
-"
-class"ProcessedAsset"dependency_paths[{"digest"%463f3fc0fc951e4f9d07a1d06d1d056b"
-mtime"2012-07-18T00:46:50-03:00"	path"3$root/vendor/assets/javascripts/jquery.pjax.js"dependency_digest"%7d474375fd3bf538d5ae96029e2cf2c5"logical_path"jquery.pjax.js"required_paths["3$root/vendor/assets/javascripts/jquery.pjax.js"content_type"application/javascript"_version"%7270767b2a9e9fff880aa5de378ca791:@compressedF:@created_atf1343275067.3385899 «u
+"digest"%463f3fc0fc951e4f9d07a1d06d1d056b:@compressedF:@created_atf1343275446.7216151 .ñ
