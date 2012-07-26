@@ -1,6 +1,6 @@
-o: ActiveSupport::Cache::Entry	:@value"Пе{"dependency_paths[{"	path".$root/app/assets/javascripts/bootstrap.js"digest"%048893f1011783d879acf6fed90f0516"
+o: ActiveSupport::Cache::Entry	:@expires_in0:@value"Пе{"dependency_digest"%1296ca7d9fe8700cb282b6d7c5f1be1f"digest"%4101c4698f456b6e237324475b51e2d9"lengthiиц"pathname".$root/app/assets/javascripts/bootstrap.js"dependency_paths[{"	path".$root/app/assets/javascripts/bootstrap.js"digest"%048893f1011783d879acf6fed90f0516"
 mtime"2012-06-04T13:45:40-03:00"
-class"ProcessedAsset"lengthiиц"_version"%7270767b2a9e9fff880aa5de378ca791"required_paths[".$root/app/assets/javascripts/bootstrap.js"source"иц/* ===================================================
+mtime"2012-06-04T13:45:40-03:00"source"иц/* ===================================================
  * bootstrap-transition.js v2.0.4
  * http://twitter.github.com/bootstrap/javascript.html#transitions
  * ===================================================
@@ -1837,5 +1837,5 @@ class"ProcessedAsset"lengthiиц"_version"%7270767b2a9e9fff880aa5de378ca791"r
   })
 
 }(window.jQuery);
-"pathname".$root/app/assets/javascripts/bootstrap.js"content_type"application/javascript"digest"%4101c4698f456b6e237324475b51e2d9"
-mtime"2012-06-04T13:45:40-03:00"logical_path"bootstrap.js"dependency_digest"%1296ca7d9fe8700cb282b6d7c5f1be1f:@expires_in0:@compressedF:@created_atf1343278087.3311551 1╔
+"required_paths[".$root/app/assets/javascripts/bootstrap.js"
+class"ProcessedAsset"logical_path"bootstrap.js"_version"%7270767b2a9e9fff880aa5de378ca791"content_type"application/javascript:@compressedF:@created_atf1343278419.944119 lr
