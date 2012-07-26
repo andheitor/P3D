@@ -1,5 +1,4 @@
-o: ActiveSupport::Cache::Entry	:@expires_in0:@value"–ﬁ{"dependency_digest"%064f4516be94e967080102960a6e06e3"digest"%866e3738f307a11a66cbe77084eb4588"lengthi“€"pathname"v/Users/otavionestareslipari/.rvm/gems/ruby-1.8.7-p358/gems/jquery-rails-2.0.2/vendor/assets/javascripts/jquery.js"dependency_paths[{"	path"v/Users/otavionestareslipari/.rvm/gems/ruby-1.8.7-p358/gems/jquery-rails-2.0.2/vendor/assets/javascripts/jquery.js"digest"%b4b69bd7640bcb8edc34737552398a60"
-mtime"2012-04-05T12:26:26-03:00"
+o: ActiveSupport::Cache::Entry	:@expires_in0:@value"–ﬁ{"digest"%866e3738f307a11a66cbe77084eb4588"_version"%7270767b2a9e9fff880aa5de378ca791"
 mtime"2012-04-05T12:26:26-03:00"source"“€/*!
  * jQuery JavaScript Library v1.7.2
  * http://jquery.com/
@@ -9405,5 +9404,6 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 
 
 })( window );
-"required_paths["v/Users/otavionestareslipari/.rvm/gems/ruby-1.8.7-p358/gems/jquery-rails-2.0.2/vendor/assets/javascripts/jquery.js"
-class"ProcessedAsset"logical_path"jquery.js"_version"%7270767b2a9e9fff880aa5de378ca791"content_type"application/javascript:@compressedF:@created_atf1343278419.234899 ñ
+"pathname"v/Users/otavionestareslipari/.rvm/gems/ruby-1.8.7-p358/gems/jquery-rails-2.0.2/vendor/assets/javascripts/jquery.js"content_type"application/javascript"lengthi“€"dependency_digest"%064f4516be94e967080102960a6e06e3"
+class"ProcessedAsset"dependency_paths[{"digest"%b4b69bd7640bcb8edc34737552398a60"
+mtime"2012-04-05T12:26:26-03:00"	path"v/Users/otavionestareslipari/.rvm/gems/ruby-1.8.7-p358/gems/jquery-rails-2.0.2/vendor/assets/javascripts/jquery.js"required_paths["v/Users/otavionestareslipari/.rvm/gems/ruby-1.8.7-p358/gems/jquery-rails-2.0.2/vendor/assets/javascripts/jquery.js"logical_path"jquery.js:@compressedF:@created_atf1343278509.37078 ∫‹
