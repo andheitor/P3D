@@ -1,0 +1,10 @@
+<div id="<%= params[:controller].parameterize%>_controller">
+	<p id="titulo" >CLIENTES</p>
+	<p>Conheça alguns clientes que contam com a tecnologia e benefícios dos softwares da P3D.</p>
+	
+	<div id="centro">
+		<% @clientes.each do |cliente| %>
+			<a target="_blank" href="<%= cliente.link %>"><%= image_tag(cliente.imagem_file_name, :size => "108x88") %></a>
+		<% end %>
+	</div>	
+</div>	

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CityCheckADM</title>
+  <%= stylesheet_link_tag    "bootstrap", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tag %>
+</head>
+
+<body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand">P3D - Admin</a>
+      <ul class="nav">    
+      	  <li><a href="/home">Site</a></li>    
+          <li><a href="/admin/users">Usuários</a></li>
+          <li><a href="/admin/conteudos">Conteúdos</a></li>
+          <li class="divider-vertical pull-right"></>
+          <li class='pull-right'><a href="#">Sair</a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>	
+<div class="container">
+	</br></br></br></br>	
+    <%= yield %>
+</div>
+
+</body>
+</html>

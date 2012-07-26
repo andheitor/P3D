@@ -1,0 +1,35 @@
+// Place all the styles related to the suporte controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#suporte_controller
+{
+	h1
+	{
+		@include fonte-titulo(22px,white);
+	    background-image:url("hr.png");
+	    background-repeat:no-repeat;
+	    background-position:left bottom;
+	    height:32px;
+	}
+  	p{
+    	@include fonte-texto(12px,white);
+  	}
+	#listaSuporte{
+	  	.tit{
+	    	@include fonte-titulo(14px,white);
+	  	}
+  	}
+  	.rodape_suporte
+  	{
+	  	background-image: url('bgBranco2.png');
+		padding: 10px;
+	  	.titulo_rodape
+	  	{
+	  		@include fonte-titulo(13px,white);
+	  	}
+	  	.conteudo_rodape
+	  	{
+	    	@include fonte-texto(12px,white);
+	  	}
+	}
+}

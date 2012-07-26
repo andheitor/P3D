@@ -1,0 +1,23 @@
+<div id="<%= params[:controller].parameterize%>_controller" style="margin-left:30px;width:95%;">
+	<h1>Suporte</h1>
+	<p>Eventuais problemas ou dúvidas sobre o funcionamento dos nossos softwares podem ser esclarecidas de forma rápida e fácil.</p>
+	<% form_for suporte_path, :method => 'get' do %>
+	  <p>
+	    <%= text_field_tag :texto_curto, params[:texto_curto] %>
+	    <%= submit_tag "Search", :texto_curto => nil %>
+	  </p>
+	<% end %>
+
+	<form action="<%=suporte_path%>" method="get" id="procurar_suporte">
+	    <%= text_field_tag :texto_curto, params[:texto_curto] %>
+	</form>
+	<div id="listaSuporte">
+		<%= render 'suporte_itens'%>
+	</div>	
+	<div class="rodape_suporte">
+		<p class="titulo_rodape">Sua duvida não esta presente aqui?</p>
+		<p class="conteudo_rodape">Contate nosso suporte por telefone  (11) 5505 - 0556 ou por E-Mail <a href="mailto:suporte@p3d.com.br">suporte@p3d.com.br</a></p>
+	</div>
+</div>
+.
+<div class="clear"></div>

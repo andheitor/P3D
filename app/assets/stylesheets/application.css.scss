@@ -1,0 +1,99 @@
+/*
+ *= require_self
+*/
+
+
+$site-width:1000px;
+
+@mixin fonte-texto($tamanho, $color: black, $weight: normal)
+{
+  font-family: Verdana,  sans-serif; 
+  font-size: $tamanho; 
+  color: $color;
+  font-weight:$weight;
+  :link{    
+    color: $color;
+    text-decoration:none;
+  }
+  :visited{
+    color: $color;
+  }
+}
+@mixin fonte-titulo($tamanho, $color: black, $weight: normal)
+{
+  font-family: 'Russo One', sans-serif;
+  font-size: $tamanho; 
+  color: $color;
+  font-weight:$weight;
+  :link{    
+    color: $color;
+    text-decoration:none;
+  }
+  :visited{
+    color: $color;
+  }
+}
+
+body{
+	background-color: #030c14;
+	margin: 0px;	
+}
+.site{	
+	background-image: url("bg.jpg");
+	background-position:top center;
+	width:100%;
+	height: 100%;
+	position: absolute;
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+.menu{
+	width:$site-width;
+	height:64px;
+	margin:0px auto;
+	.links{
+	  position:relative;
+	  top: -50px;
+	  left: 200px;
+    text-decoration:none;
+	  @include fonte-titulo(14px, white)
+	}
+}
+.rodape{
+	width:$site-width;
+	margin:0px auto;
+	.links_rodape
+	{
+		position: absolute;
+		margin-top: 27px;
+		margin-left: 620px;
+		@include fonte-titulo(10px, white);
+	}
+}
+.conteudo{
+	background-image: url("bgConteudo.png");
+	background-repeat: repeat;
+	width:$site-width;
+	/*min-height:100%;*/
+	margin:0px auto;
+	padding:30px 0px 0px 0px ;
+}
+
+.clear { 
+  clear: both;
+}
+
+.imgArredondada
+{
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+@import "acontece.css.scss";
+@import "clientes.css.scss";
+@import "contato.css.scss";
+@import "empresa.css.scss";
+@import "home.css.scss";
+@import "nossoproduto.css.scss";
+@import "suporte.css.scss";

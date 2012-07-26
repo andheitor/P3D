@@ -1,0 +1,77 @@
+<div id="<%= params[:controller].parameterize%>_controller">
+	<h1>NOSSO PRODUTO</h1>
+	<p>Aqui você conhece as disciplinas que os softwares atuam, além de assistir videos demonstrativos do que é possivel fazer com nosso produto e os benefícios que ele traz para a sala de aula. </p>
+	<div id="esquerda">
+		<img   alt="clique aqui" src="assets/barraBranca.png">
+		
+		<!--p class="tituloAberto">Biologia</p>
+			<ul class="itens">
+				<li class="subItem"><a href="#">Corpo Humano</a></li>
+				<li class="subItem"><a href="#">Desenv. Fetal</a></li>
+				<li class="subItem"><a href="#">Sistema Circulatório</a></li>
+			</ul-->
+		<% @titulo.each_with_index do |t,index| %>
+			<% if index > 0 and @temp_tit != t.titulo %>	
+				<% @temp_tit = t.titulo %>
+				</ul>
+				<p class="titulo" onclick="clickTitulo(this)" id="<%= t.id %>" ><%= t.titulo %></p>		
+				<ul class="itens" style="display: none; " id="ul<%= t.id %>">
+			<% elsif @temp_tit != t.titulo %>	
+				<% @temp_tit = t.titulo %>
+				<p class="titulo" onclick="clickTitulo(this)" id="<%= t.id %>" ><%= t.titulo %></p>	
+				<ul class="itens" style="display: none; " id="ul<%= t.id %>">
+			<% end %>
+				<li class="subItem"><%= link_to t.texto_curto, nossoproduto_path(:texto_curto => t.texto_curto) %></li>
+
+		<% end %>
+		</ul>
+		<img alt=""  src="assets/barraBranca.png">
+		<br />
+		<br />
+		<br />
+		<img alt="clique aqui" style="margin-left:20px;" src="assets/cliqueaqui.png" />
+	</div>
+	<div id="direita">
+		<div style="width: 590px;height: 433px;">
+			<iframe id="videoProduto" width="590" height="433" src="http://www.youtube.com/embed/R3TeBeTrorc" frameborder="0" allowfullscreen></iframe>
+		</div>
+				<br/>
+		<% @listaVideos.each_with_index do |v, index| %>
+			<% if v.link != ""%>
+				<a href="javascript:MudaVideo('<%=v.link%>')">Video <%=index += 1%></a>
+			<% end %>
+		<% end %>
+		<br/><br/>
+		<!--a href="javascript:MudaVideo('http://www.google.com.br')">Video 2</a>
+		<a href="javascript:MudaVideo('http://www.google.com.br')">Video 3</a-->
+		<h2 class="fotos">Imagens do produto</h2>
+		<div class="fotosProduto">
+		<% @listaFotos.each do |f| %>
+			<% if f.imagem_file_name %>
+				<a href="#" onclick="$('#modalfoto<%= f.id%>').modal();"><%= image_tag(f.imagem_file_name, :size => "56x56", :class => "imgArredondada") %></a>
+				<div class="modal hide" id="modalfoto<%= f.id%>">
+					<div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal">×</button>
+					  <h3><%= f.titulo%></h3>
+					</div>
+					<div class="modal-body">
+					  <p style="color:black"><%= image_tag(f.imagem_file_name, :style => "width: 100%;height:100%") %></p>
+					</div>
+					<div class="modal-footer">
+					  <a href="#" class="btn" data-dismiss="modal">Fechar</a>					  
+					</div>
+				</div>	
+			<% end %>
+		<% end %>
+		<br/><br/>
+			<!--img src="assets/imgPadrao.png" />
+			<img src="assets/imgPadrao.png" />
+			<img src="assets/imgPadrao.png" />
+			<img src="assets/imgPadrao.png" />
+			<img src="assets/imgPadrao.png" />
+			<img src="assets/imgPadrao.png" />
+			<img src="assets/imgPadrao.png" /-->
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>

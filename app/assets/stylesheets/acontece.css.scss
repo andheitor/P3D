@@ -1,0 +1,44 @@
+// Place all the styles related to the acontece controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#acontece_controller{
+  img{
+      float:left;
+      margin-right:15px;
+  }
+  p{    
+    position:relative;
+    @include fonte-texto(12px,white);
+    margin-left:25px;
+  }
+  a{    
+    @include fonte-texto(12px,silver,bold);
+    text-decoration:none;
+    float:right;
+		margin-right:10px;
+  }
+  h1{    
+    @include fonte-titulo(22px,white);
+    background-image:url("hr.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    height:32px;
+    margin-left:25px;
+  }
+  .tit{    
+    @include fonte-texto(15px,white);
+  }
+  .data{
+    @include fonte-texto(13px,white);
+    font-style:italic;
+    margin-left:20px;
+  }
+  li{
+    background-image:url("bgAcontece.jpg");
+    height:128px;
+    margin-bottom:15px;
+    list-style-type:none;
+		width: 96%;
+  }
+}
+

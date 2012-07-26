@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>P3D</title>
+	<link href='http://fonts.googleapis.com/css?family=Russo+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "bootstrap", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+	<%= javascript_include_tag "bootstrap" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="site">
+	<div class="menu">
+		<img src="assets/topo.png" alt="topo" border="0" >
+		<div class="links">
+			<% @menu.each do |m| %>
+				<% if m.id == 1 %>
+					<%= link_to m.menu,  :controller => 'empresa', :action => 'index' %>
+					&nbsp|&nbsp
+				<% elsif m.id == 2%>
+					<%= link_to m.menu,  :controller => 'clientes', :action => 'index' %>
+					&nbsp|&nbsp
+				<% elsif m.id == 3%>
+					<%= link_to m.menu,  :controller => 'nossoproduto', :action => 'index' %>
+					&nbsp|&nbsp
+				<% elsif m.id == 4%>
+					<%= link_to m.menu,  :controller => 'acontece', :action => 'index' %>
+					&nbsp|&nbsp
+				<% elsif m.id == 5%>
+					<%= link_to m.menu,  :controller => 'contato', :action => 'index' %>
+				<% end %>
+			<% end %>
+			
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+			<%= link_to_unless_current image_tag("bandeiraBrasil.jpg"), :locale => "PT-br" %>
+&nbsp&nbsp
+&nbsp&nbsp
+			<%= link_to_unless_current image_tag("bandeiraInglaterra.jpg"), :locale => "EN" %>
+&nbsp&nbsp
+
+&nbsp&nbsp
+			<%= link_to_unless_current image_tag("bandeiraEspanha.jpg"), :locale => "ES" %>
+		</div>
+	</div>
+	<div class="conteudo">
+		<%= yield %>
+	</div>
+	<div class="rodape">
+		<div class="links_rodape">
+
+			<% @menu.each do |m| %>
+				<% if m.id == 1 %>
+					<%= link_to m.menu,  :controller => 'empresa', :action => 'index' %>
+					&nbsp
+				<% elsif m.id == 2%>
+					<%= link_to m.menu,  :controller => 'clientes', :action => 'index' %>
+					&nbsp
+				<% elsif m.id == 3%>
+					<%= link_to m.menu,  :controller => 'nossoproduto', :action => 'index' %>
+					&nbsp
+				<% elsif m.id == 4%>
+					<%= link_to m.menu,  :controller => 'acontece', :action => 'index' %>
+					&nbsp
+				<% elsif m.id == 5%>
+					<%= link_to m.menu,  :controller => 'contato', :action => 'index' %>
+				<% end %>
+			<% end %>
+		</div>
+		<img src="assets/rodape.png" alt="topo" border="0" >
+	</div>
+</div>
+</body>
+</html>

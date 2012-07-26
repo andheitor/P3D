@@ -1,0 +1,69 @@
+#nossoproduto_controller{
+  h1{    
+    @include fonte-titulo(22px,white);
+    background-image:url("hr.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    height:32px;
+    margin-left:15px;
+  }
+  p{
+    @include fonte-texto(12px,white);
+    margin-left:15px;
+  }
+  
+  #direita{
+    float:right;
+		width: 560px;
+		margin-right: 70px;
+  
+    .fotos{
+      background-image:url("camera.png");
+      background-position:left center;
+      background-repeat:no-repeat;
+      padding-left:50px;
+      @include fonte-texto(18px,white,bold);
+    }
+    a{
+      text-decoration:none;
+      @include fonte-texto(13px,gray);
+      margin:5px;
+    }
+    .fotosProduto{
+      img{
+        width:56px;
+        height:56px;
+        margin:5px;
+        float:left;
+      }
+    }
+  }
+  
+  #esquerda{    
+    float:left;
+		width: 300px;
+		margin-left: 70px;
+    .titulo{      
+      background-image:url("bulletFechado.png");
+      background-position:left center;
+      background-repeat:no-repeat;
+      padding-left:30px;
+      @include fonte-texto(16px,white,bold);
+      cursor: pointer;
+    }
+    .tituloAberto{      
+      background-image:url("bulletAberto.png");
+      background-position:left center;
+      background-repeat:no-repeat;
+      padding-left:30px;
+      @include fonte-texto(16px,white,bold);       
+      }
+    
+    .subItem{
+        @include fonte-texto(12px,silver);
+        list-style-type:none;
+        margin-bottom:4px;
+    }
+  }
+  
+}

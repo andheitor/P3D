@@ -1,0 +1,23 @@
+<h1>Usuários</h1>
+<br>
+<table class="table table-striped">
+  <tr>
+    <th>Login</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @admin_users.each do |admin_user| %>
+  <tr>
+    <td><%= admin_user.login %></td>
+    <td><%= link_to 'Mostrar', admin_user, :class => 'btn btn-primary btn-mini' %></td>
+    <td><%= link_to 'Alterar', edit_admin_user_path(admin_user), :class => 'btn btn-primary btn-mini' %></td>
+    <td><%= link_to 'Apagar', admin_user, :confirm => 'Tem certeza que deseja apagar usuário?', :method => :delete, :class => 'btn btn-danger btn-mini' %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Novo Usuário', new_admin_user_path, :class => 'btn btn-primary' %>

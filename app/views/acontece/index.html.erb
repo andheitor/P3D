@@ -1,0 +1,34 @@
+
+
+<div id="<%= params[:controller].parameterize%>_controller">
+	<h1>PRÊMIOS & CERTIFICAÇÕES</h1>
+	<p>Nossa empresa atua em diversos países e está sempre em busca de novidades. Acompanhe o que acontece no nosso dia-a-dia.</p>
+	<ul>
+		<% @acontece_conteudos.each do |acontece| %>
+			<li>
+				<%= image_tag(acontece.imagem_file_name, :size => "171x128") %>
+				<span class="tit"><%= acontece.titulo%></span> 
+				<span class="data">postado em:<%= acontece.updated_at.strftime("%d-%m-%Y")%></span>
+				<p class="interno"><%= acontece.texto_curto%></p>
+				<a href="#" onclick="$('#modalerro<%= acontece.id%>').modal();">+ Saiba Mais</a>
+			</li>
+			<div class="clear"></div>
+			<div class="modal hide" id="modalerro<%= acontece.id%>">
+			  <div class="modal-header">
+			    <button type="button" class="close" data-dismiss="modal">×</button>
+			    <h3><%= acontece.titulo%></h3>
+			  </div>
+			  <div class="modal-body">
+			    <p style="color:black"><%= acontece.texto_longo%></p>
+			  </div>
+			  <div class="modal-footer">
+			    <a href="#" class="btn" data-dismiss="modal">Fechar</a>
+			    
+			  </div>
+			</div>	
+		<% end %>		
+	</ul>	
+	<div class="clear"></div>
+	.<!-- pog para fazer o bg ficar em tudo -->	
+
+</div>

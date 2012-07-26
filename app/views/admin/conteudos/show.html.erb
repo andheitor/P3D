@@ -1,0 +1,41 @@
+<p id="notice", class="alert alert-info"><%= notice %></p>
+</br>
+
+<p>
+  <b>Menu:</b>
+  <%= @admin_conteudo.menu %>
+</p>
+
+<p>
+  <b>Titulo:</b>
+  <%= @admin_conteudo.titulo %>
+</p>
+
+<p>
+  <b>Texto curto:</b>
+  <%= @admin_conteudo.texto_curto %>
+</p>
+
+<p>
+  <b>Texto longo:</b>
+  <%= @admin_conteudo.texto_longo %>
+</p>
+
+<p>
+  <b>Link:</b>
+  <%= @admin_conteudo.link %>
+</p>
+
+<p>
+  <b>Iframe:</b>
+  <%= @admin_conteudo.iframe %>
+</p>
+
+<p>
+  <b>Localização</b>
+  <%= @admin_conteudo.localizacao %>
+</p>
+
+
+<%= link_to 'Alterar', edit_admin_conteudo_path(@admin_conteudo) %> |
+<%= link_to 'Voltar', admin_conteudos_path %>

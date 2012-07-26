@@ -1,0 +1,24 @@
+// Place all the styles related to the clientes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#clientes_controller
+{  #titulo{    
+    @include fonte-titulo(22px,white);
+    background-image:url("hr.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    height:32px;
+    margin-left:15px;
+  }
+  p{
+    @include fonte-texto(12px,white);
+    margin-left:15px;
+  }
+  #centro{
+    width:780px;
+    margin:0px auto;
+    img{
+      margin:8px;
+    }
+  }
+}

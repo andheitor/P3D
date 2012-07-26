@@ -1,0 +1,15 @@
+<%= simple_form_for(@admin_user) do |f| %> 
+  <div style='width: 300px'>
+  		<%= f.error_notification %>
+  </div>
+
+  <div class="well form-inputs">
+    <%= f.input :login %>
+    <%= f.input :password, :label => 'Senha'%>
+    <%= f.input :password_confirmation, :label => 'Confirmar senha' %>
+  </div>
+
+  <div class="well form-actions">
+    <%= f.submit '  OK  ', :class => 'btn btn-primary' %>
+  </div>
+<% end %>

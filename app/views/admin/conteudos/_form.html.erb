@@ -1,0 +1,36 @@
+<%= simple_form_for(@admin_conteudo, :html => { :multipart => true }) do |f| %>
+  <div style='width: 300px'>
+  		<%= f.error_notification %>
+  </div>
+
+  <div class="well form-inputs">
+    <%= f.input :menu, :collection => ['Home', 'Clientes', 'Empresa', 'Nosso Produto', 
+    								   'Prêmios & Certificações'], :prompt => 'Escolha uma página'%>
+    <%= f.input :titulo %>
+    <%= f.input :texto_curto %>
+    <%= f.input :texto_longo %>
+    <%= f.input :link %>
+    <%= f.input :iframe %>
+    <%= f.input :localizacao %>
+    <%= f.file_field :imagem %>
+  </div>
+  
+   <h2>Textos em inglês</h2>
+   <%= f.globalize_fields_for :en do |i| %>
+       <%= i.input :titulo %>
+       <%= i.input :texto_curto %>
+       <%= i.input :texto_longo %> 
+   <%end%>
+   
+   <h2>Textos em Espanhol</h2>
+   <%= f.globalize_fields_for :es do |e| %>
+       <%= e.input :titulo %>
+       <%= e.input :texto_curto %>
+       <%= e.input :texto_longo %> 
+   <%end%>
+  
+
+  <div class="well form-actions">
+    <%= f.submit '  OK!  ', :class => 'btn btn-primary' %>
+  </div>
+<% end %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  menu: MyString
+  titulo: MyString
+  texto_curto: MyString
+  texto_longo: MyText
+  link: MyString
+  iframe: MyString
+
+two:
+  menu: MyString
+  titulo: MyString
+  texto_curto: MyString
+  texto_longo: MyText
+  link: MyString
+  iframe: MyString

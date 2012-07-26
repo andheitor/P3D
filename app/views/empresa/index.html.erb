@@ -1,0 +1,39 @@
+<div id="<%= params[:controller].parameterize%>_controller">
+	
+	<div id="centro">
+	<% @conteudo_empresa.each do |t| %>
+		<h1><%= t.titulo %></h1>
+		<%= t.texto_longo %>
+	<% end %>
+	
+	
+	<h2>VIDEOS</h2>
+	
+	<% @video1.each do |t| %>
+		<div id="video1" class="video">
+			<iframe width="300" height="255" src="<%= t.link %>" frameborder="0" allowfullscreen></iframe>
+		</div>
+	<% end %>
+
+	<% @video2.each do |t| %>
+		<div class="video">
+			<iframe width="300" height="255" src="<%= t.link %>" frameborder="0" allowfullscreen></iframe>
+		</div>
+	<% end %>
+	
+	<% @video1.each do |t| %>
+		<div class="video">
+			<span><%= t.titulo %></span>
+			<p><%= t.texto_curto %></p>
+		</div>
+	<% end %>
+
+	<% @video2.each do |t| %>
+		<div class="video">
+			<span><%= t.titulo %></span>
+			<p><%= t.texto_curto %></p>
+		</div>
+	<% end %>
+	
+	<div class="clear"></div>
+</div>

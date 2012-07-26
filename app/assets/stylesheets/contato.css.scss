@@ -1,0 +1,49 @@
+// Place all the styles related to the contato controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#contato_controller
+{
+  #titulo{    
+    @include fonte-titulo(22px,white);
+    background-image:url("hr.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    height:32px;
+    margin-left:15px;
+  }
+  p{
+    @include fonte-texto(12px, white);
+    margin-left:15px;
+  }
+  #centro{
+    width:780px;
+    margin:0px auto;
+    text-align:center;
+    #direita{
+      float:right;
+      width:206px;
+      margin: 20px 74px 20px 0px;
+      #subtitulo{
+	margin-top:100px;
+        text-align:center;
+        @include fonte-titulo(16px,white);
+      }
+      p{
+        text-align:left;
+      }
+    }
+    #esquerda{
+      float:left;
+      width:370px;
+      margin: 20px 20px 20px 91px;    
+    }
+  }
+  img{
+    margin-bottom:10px;
+    float:left;
+  }
+  #cliqueaqui{
+    margin:15px;
+  }
+  
+}

@@ -1,0 +1,37 @@
+// Place all the styles related to the Empresa controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#empresa_controller{
+  background-image:url("corpo.png");
+  background-repeat:no-repeat;
+  background-position:right center; 
+  h2{    
+    @include fonte-texto(16px,white,bold);
+    margin-left:15px;
+  }
+  span{  
+    @include fonte-texto(14px,white,bold);
+    margin-left:15px;
+  }
+  p{  
+    @include fonte-texto(12px,white);
+    margin-left:15px;
+  }
+  #centro{
+    width:700px;
+    h1{    
+      @include fonte-titulo(22px,white);
+      background-image:url("hr.png");
+      background-repeat:no-repeat;
+      background-position:left bottom;
+      height:32px;
+      margin-left:15px;
+    }
+  }
+  .video{
+    float:left;
+    margin-left:15px;
+    width:300px;
+  }
+}
+

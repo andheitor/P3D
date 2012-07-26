@@ -1,0 +1,43 @@
+<div id="<%= params[:controller].parameterize%>_controller">
+	
+	<div id="myCarousel" class="carousel slide">
+		<img id="banner" src="assets/banner1.jpg" alt="banner" border="0" >
+		<input type="hidden" id="hidBanner" value="1"/>
+	</div>
+	<div class="clear"></div>
+	<div id="centro">
+		<% @admin_conteudos_texto_centro.each do |admin_conteudo| %>
+			<div class="news">
+				<%= image_tag(admin_conteudo.imagem_file_name) %>
+				<h1><%= admin_conteudo.titulo %></h1>
+				<hr>
+				<p><%= admin_conteudo.texto_curto %></p>
+				<a href="<%=admin_conteudo.titulo %>"> <%=  image_tag("btnVejaMais.jpg")%> <a/>
+			</div>
+		<% end %>
+	</div>
+	<div class="clear"></div>
+	<div id="carousel" class="carousel" >
+		<div class="setas">
+			<img id="carouselEsquerda" src="assets/carosel_esquerda.jpg" alt="banner" border="0" >
+		</div>
+		<input id="qtdCarousel" type="hidden" value="<%= @admin_conteudos_carousel_count %>" />
+		<% @admin_conteudos_carousel.each do |admin_conteudo| %>
+			<% @cont ||= 0%>	
+			<% @cont += 1%>		
+			<div id="<%= @cont %>">
+				<div class="texto">
+					<span><%= admin_conteudo.titulo %></span>
+					<p><%= admin_conteudo.texto_longo %></p>
+				</div>
+				<%= image_tag(admin_conteudo.imagem_file_name, :size => "153x131") %>
+			</div>
+		<% end %>
+		
+		<div class="setas">
+			<img id="carouselDireita"src="assets/carosel_direita.jpg" alt="banner" border="0" >
+		</div>
+		<div class="clear"></div>		
+	</div>
+	<div class="clear"></div>
+</div>
